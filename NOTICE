@@ -1,0 +1,36 @@
+PikaXPS — Additional terms under GNU GPLv3 section 7
+=====================================================
+
+PikaXPS is licensed under the GNU General Public License, version 3 (see LICENSE).
+In accordance with GPLv3 section 7, the copyright holder adds the following terms.
+They apply to every copy and to every work based on PikaXPS ("derivative works").
+
+1. Attribution must be preserved (GPLv3 §7(b)).
+   Derivative works, and copies that are redistributed, must keep the following
+   notice visible in their "About" dialog (or equivalent program information screen)
+   and in their documentation or README:
+
+       Based on PikaXPS — https://github.com/taeheekim2024-star/pikaxps
+       If this software helps your research, please cite PikaXPS (see CITATION.cff).
+
+   The notice may be translated, but it may not be removed, hidden, or made
+   materially less prominent than other credits shown in the same place.
+
+2. Names and marks are not licensed (GPLv3 §7(e)).
+   The GPLv3 grant does not include any trademark rights. The name "PikaXPS", the
+   "Pika" brand as used for this project, the pika mascot, the application icon
+   and logo, and the project site address are reserved. Derivative works must use
+   a different name and icon. See TRADEMARK.md for what is and is not allowed.
+
+3. Citation request (not a license condition).
+   PikaXPS is an academic tool. Users who publish results obtained with it are
+   asked, as a matter of scientific courtesy, to cite it as described in
+   CITATION.cff and on https://taeheekim2024-star.github.io/pikaxps/cite/ .
+
+4. Dual licensing.
+   A separate commercial license may be arranged for uses that are incompatible
+   with the GPLv3 (for example, bundling inside closed-source instrument software).
+   See COMMERCIAL-LICENSE.md.
+
+These additional terms do not restrict any right granted by the GPLv3 beyond what
+section 7 permits, and they may be removed by the copyright holder at any time.

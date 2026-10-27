@@ -5,6 +5,11 @@
 // tasteful, privacy-clean nudge toward the two things that actually sustain a free
 // academic tool: a GitHub star and a citation. Both are plain links — no tracking.
 import Default from '@astrojs/starlight/components/Footer.astro';
+import { AD } from '../ads.config.mjs';
+
+// Project notice slot: reads <base>/notice.json — the same file the desktop app reads.
+// {} = nothing shown. Ad/sponsor slot: see ads.config.mjs (off by default).
+const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const pathname = Astro.url.pathname;                 // e.g. /pikaxps/ko/cite/
 const isKo = /\/ko(\/|$)/.test(pathname);
@@ -39,6 +44,16 @@ const T = isKo
 
 {show && (
   <div class="cp-extras">
+    <div id="cp-notice" class="cp-notice" hidden></div>
+    {AD.provider === 'ethicalads' && AD.ethicaladsPublisher && (
+      <div class="cp-ad">
+        <div data-ea-publisher={AD.ethicaladsPublisher} data-ea-type="text"></div>
+        <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+      </div>
+    )}
+    {AD.provider === 'custom' && AD.customHtml && (
+      <div class="cp-ad" set:html={AD.customHtml}></div>
+    )}
     <aside class="cp-support">
       <p class="cp-support-lead">{T.lead}</p>
       <p class="cp-support-body">{T.body}</p>
@@ -76,8 +91,44 @@ const T = isKo
   </div>
 )}
 
+<script define:vars={{ BASE, isKo }}>
+  // Notice bar (shared notice.json contract: id, text/text_ko, url, label/label_ko, kind, until)
+  (function () {
+    var box = document.getElementById('cp-notice');
+    if (!box) return;
+    fetch(BASE + '/notice.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (n) {
+        if (!n || typeof n !== 'object') return;
+        var text = (isKo && n.text_ko) || n.text;
+        if (!text) return;
+        if (n.until && new Date(n.until + 'T23:59:59') < new Date()) return;
+        var id = String(n.id || text);
+        try { if (localStorage.getItem('cp-notice-dismissed') === id) return; } catch (e) {}
+        var p = document.createElement('p');
+        p.textContent = (n.kind === 'sponsor' ? '❤️ ' : n.kind === 'update' ? '🆕 ' : 'ℹ️ ') + String(text).slice(0, 300);
+        if (n.url && /^https:\/\//.test(n.url)) {
+          var a = document.createElement('a');
+          a.href = n.url; a.textContent = ' ' + ((isKo && n.label_ko) || n.label || (isKo ? '열기' : 'Open'));
+          p.appendChild(a);
+        }
+        var x = document.createElement('button');
+        x.type = 'button'; x.className = 'cp-notice-x'; x.textContent = '✕'; x.title = isKo ? '닫기' : 'Dismiss';
+        x.onclick = function () { try { localStorage.setItem('cp-notice-dismissed', id); } catch (e) {} box.hidden = true; };
+        box.appendChild(p); box.appendChild(x); box.hidden = false;
+      })
+      .catch(function () {});
+  })();
+</script>
+
 <style>
   .cp-extras { margin-top: 2rem; }
+  .cp-notice { display: flex; gap: 0.6rem; align-items: flex-start; margin: 1.2rem 0; padding: 0.7rem 0.9rem;
+               border: 1px solid var(--sl-color-gray-5); border-left: 3px solid var(--sl-color-accent);
+               border-radius: 0.5rem; background: var(--sl-color-gray-6); font-size: var(--sl-text-sm); }
+  .cp-notice p { margin: 0; flex: 1; }
+  .cp-notice-x { border: none; background: none; cursor: pointer; color: var(--sl-color-gray-2); font-size: 1rem; line-height: 1; }
+  .cp-ad { margin: 1rem 0; }
   .cp-support {
     margin: 1.5rem 0;
     border: 1px solid var(--sl-color-gray-5);

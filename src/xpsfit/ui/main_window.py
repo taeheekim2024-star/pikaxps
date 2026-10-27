@@ -20,6 +20,7 @@ from .dialogs import BatchFitDialog
 from .help_panel import HelpPanel
 from .i18n import t
 from .import_wizard import ImportWizard
+from .notice import NoticeBar, notices_enabled, set_notices_enabled
 from .peak_table import PeakTable
 from .plot_widget import SpectrumPlot, height_to_area
 from .quantify_panel import QuantifyPanel
@@ -44,6 +45,11 @@ class MainWindow(QMainWindow):
         v = QVBoxLayout(central)
         v.setContentsMargins(8, 8, 8, 8)
         v.setSpacing(8)
+        # project notice bar (hidden unless notice.json on the project site says something)
+        self.notice_bar = NoticeBar(central)
+        v.addWidget(self.notice_bar)
+        from PySide6.QtCore import QTimer
+        QTimer.singleShot(1500, self.notice_bar.start)
         controls = QHBoxLayout()
         controls.setSpacing(8)
         controls.addWidget(QLabel(t("Background:", "백그라운드:")))
@@ -296,6 +302,14 @@ class MainWindow(QMainWindow):
         self._add_action(m_help, t("❤️ Support development (sponsor)", "❤️ 개발 지원 (후원)"),
                          lambda: self._open_url("#sponsor", sponsor=True))
         m_help.addSeparator()
+        act_notice = QAction(t("Show notices from the project at startup",
+                               "시작할 때 프로젝트 공지 받기"), self)
+        act_notice.setCheckable(True)
+        act_notice.setChecked(notices_enabled())
+        act_notice.setStatusTip(t("Fetches one small notice.json from the project site (no account, no tracking)",
+                                  "프로젝트 사이트의 notice.json 한 개만 읽습니다 (계정·추적 없음)"))
+        act_notice.toggled.connect(set_notices_enabled)
+        m_help.addAction(act_notice)
         self._add_action(m_help, t("About", "정보"), self._about)
 
     def _set_language(self, code: str) -> None:
@@ -808,4 +822,14 @@ class MainWindow(QMainWindow):
                 "(Help ▸ How to cite PikaXPS).",
                 "PikaXPS가 연구에 도움이 됐다면 GitHub에서 ⭐ Star와 인용 부탁드립니다 "
                 "(도움말 ▸ PikaXPS 인용 방법).") + "<br>"
-            + f"<a href='{REPO_URL}'>{host}</a>")
+            + f"<a href='{REPO_URL}'>{host}</a><br><br>"
+            + "<span style='color:#5b6b7e'>"
+            + t("Official builds come only from the GitHub releases page. “PikaXPS” and the pika mascot "
+                "are marks of the author (TRADEMARK.md); the GPLv3 covers the code, and derivative works "
+                "must keep the ‘Based on PikaXPS’ credit (NOTICE). At startup the app reads one notice.json "
+                "from the project site — turn it off in Help.",
+                "공식 빌드는 GitHub 릴리스 페이지에서만 배포됩니다. ‘PikaXPS’ 이름과 피카 마스코트는 "
+                "제작자의 표장이며(TRADEMARK.md), GPLv3는 코드에 적용되고 파생작은 ‘Based on PikaXPS’ "
+                "표기를 유지해야 합니다(NOTICE). 시작할 때 프로젝트 사이트의 notice.json 하나를 읽으며, "
+                "도움말 메뉴에서 끌 수 있습니다.")
+            + "</span>")

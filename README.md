@@ -95,6 +95,19 @@ is currently also free under the GPLv3 until a commercial license is established
 [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md). Third-party components and reference-data sources are
 listed in [THIRD-PARTY-LICENSES.txt](THIRD-PARTY-LICENSES.txt).
 
+**Names and marks.** The GPLv3 covers the code, not the name. "PikaXPS", the pika mascot and
+the app icon identify the official project; forks must use their own name and icon, and must
+keep the *"Based on PikaXPS"* credit in their About box and docs (GPLv3 §7(b) additional terms —
+see [NOTICE](NOTICE) and [TRADEMARK.md](TRADEMARK.md)). Official builds are published only on the
+[releases page](https://github.com/taeheekim2024-star/pikaxps/releases).
+
+## Privacy
+
+PikaXPS has no account, no telemetry and no ads. The only network request it makes is, at
+startup, one GET of a static file — `https://taeheekim2024-star.github.io/pikaxps/notice.json` — so the
+project can announce a release or a paper to cite. The file is `{}` unless there is news; nothing
+is sent back; and *Help ▸ Show notices from the project* turns it off.
+
 ## Maintenance
 
 Maintained part-time by a single developer. Released as stable open source: if updates slow, the

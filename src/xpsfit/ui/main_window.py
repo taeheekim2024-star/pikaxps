@@ -738,7 +738,7 @@ class MainWindow(QMainWindow):
                else REPO_URL)
         # sponsor → GitHub Sponsors page once enabled; falls back to the repo
         if sponsor:
-            url = "https://github.com/sponsors/contact993"
+            url = "https://github.com/sponsors/taeheekim2024-star"
         QDesktopServices.openUrl(QUrl(url))
 
     def _citation_bibtex(self) -> str:
@@ -789,7 +789,7 @@ class MainWindow(QMainWindow):
             self.statusBar().showMessage(
                 t("BibTeX copied to clipboard.", "BibTeX를 클립보드에 복사했습니다."), 5000)
         elif clicked is web_btn:
-            QDesktopServices.openUrl(QUrl("https://contact993.github.io/pikaxps/cite/"))
+            QDesktopServices.openUrl(QUrl("https://taeheekim2024-star.github.io/pikaxps/cite/"))
 
     def _about(self) -> None:
         from .. import REPO_URL

@@ -7,11 +7,11 @@ PikaXPS is free and open source (GPLv3). No account, no Python install required.
 
 ## Download (latest version)
 
-- **⬇ macOS (Apple Silicon) — [PikaXPS-macOS.dmg](https://github.com/contact993/pikaxps/releases/latest/download/PikaXPS-macOS.dmg)**
-- **⬇ Windows 10 / 11 (x64) — [PikaXPS-Windows-x64.zip](https://github.com/contact993/pikaxps/releases/latest/download/PikaXPS-Windows-x64.zip)**
+- **⬇ macOS (Apple Silicon) — [PikaXPS-macOS.dmg](https://github.com/taeheekim2024-star/pikaxps/releases/latest/download/PikaXPS-macOS.dmg)**
+- **⬇ Windows 10 / 11 (x64) — [PikaXPS-Windows-x64.zip](https://github.com/taeheekim2024-star/pikaxps/releases/latest/download/PikaXPS-Windows-x64.zip)**
 
 These links download the file directly. (To browse every version, see the
-[Releases page](https://github.com/contact993/pikaxps/releases) — there, pick the `.dmg` / `.zip`
+[Releases page](https://github.com/taeheekim2024-star/pikaxps/releases) — there, pick the `.dmg` / `.zip`
 under **Assets**, *not* the auto-generated "Source code".)
 
 The app is **unsigned** (no paid Apple/Microsoft certificate), so on first launch your OS will warn
@@ -27,7 +27,7 @@ you. That's expected — here's the one-time step to allow it:
 
 :::caution[Apple Silicon only]
 This build runs on **Apple Silicon (M1–M4)** Macs. It will **not** run on an Intel Mac.
-Need an Intel or Linux build? [Open an issue](https://github.com/contact993/pikaxps/issues/new/choose).
+Need an Intel or Linux build? [Open an issue](https://github.com/taeheekim2024-star/pikaxps/issues/new/choose).
 :::
 
 ### Opening it on Windows (10 / 11, x64)
@@ -39,7 +39,7 @@ Need an Intel or Linux build? [Open an issue](https://github.com/contact993/pika
 ## Run from source
 
 ```bash
-git clone https://github.com/contact993/pikaxps && cd pikaxps
+git clone https://github.com/taeheekim2024-star/pikaxps && cd pikaxps
 python -m venv .venv && . .venv/bin/activate
 pip install -e .
 python -m xpsfit.app
@@ -49,5 +49,5 @@ python -m xpsfit.app
 
 PikaXPS is **100% free, with no ads**. If it helps your work, two things keep it alive:
 
-- **[Star it on GitHub →](https://github.com/contact993/pikaxps)** — the clearest signal that the tool is used.
+- **[Star it on GitHub →](https://github.com/taeheekim2024-star/pikaxps)** — the clearest signal that the tool is used.
 - **[Cite it in your paper →](/pikaxps/cite/)** — citations are what justify a free academic tool's continued development.

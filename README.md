@@ -57,7 +57,7 @@ don't have to look them up.
 
 ## Install
 
-Download the latest signed build from the [Releases](https://github.com/contact993/pikaxps/releases)
+Download the latest signed build from the [Releases](https://github.com/taeheekim2024-star/pikaxps/releases)
 page:
 - **macOS** — unzip, move `PikaXPS.app` to Applications, first launch via right-click → Open.
 - **Windows** — unzip, run `PikaXPS.exe` from the extracted folder ("More info → Run anyway" on
@@ -68,7 +68,7 @@ No Python install required.
 ### Run from source
 
 ```bash
-git clone https://github.com/contact993/pikaxps && cd xpsfit
+git clone https://github.com/taeheekim2024-star/pikaxps && cd xpsfit
 python -m venv .venv && . .venv/bin/activate
 pip install -e .
 python -m xpsfit.app
@@ -77,8 +77,8 @@ python -m xpsfit.app
 ## Feedback, feature requests & contributing references
 
 This tool grows from its users:
-- **Bug / feature** — open an [issue](https://github.com/contact993/pikaxps/issues/new/choose).
-- **Questions & feature voting** — the [Discussions](https://github.com/contact993/pikaxps/discussions) board.
+- **Bug / feature** — open an [issue](https://github.com/taeheekim2024-star/pikaxps/issues/new/choose).
+- **Questions & feature voting** — the [Discussions](https://github.com/taeheekim2024-star/pikaxps/discussions) board.
 - **📚 Contribute a reference value** — use the *Submit a reference value* issue template (a
   literature source is required). Accepted submissions ship in the next release with credit, so the
   database keeps getting richer.

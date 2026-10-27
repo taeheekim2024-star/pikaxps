@@ -10,7 +10,7 @@ continued development.
 
 Just name it where you describe the analysis. For example:
 
-> *XPS spectra were analyzed (peak-fitted) using PikaXPS (https://github.com/contact993/pikaxps).*
+> *XPS spectra were analyzed (peak-fitted) using PikaXPS (https://github.com/taeheekim2024-star/pikaxps).*
 
 or
 
@@ -20,7 +20,7 @@ For most journals, a one-sentence mention in the **Methods / Experimental** sect
 complete and valid software citation — nothing more is needed.
 
 :::tip[Two ways to support this free, no-ads tool]
-**⭐ [Star PikaXPS on GitHub](https://github.com/contact993/pikaxps)** and name it in your Methods.
+**⭐ [Star PikaXPS on GitHub](https://github.com/taeheekim2024-star/pikaxps)** and name it in your Methods.
 Both are free, take seconds, and are what keep a no-ads academic tool funded and maintained.
 :::
 
@@ -34,12 +34,12 @@ is in preparation; until it appears, cite the repository and the version you use
   author  = {Pika},
   title   = {PikaXPS: free cross-platform XPS peak fitting with a built-in fit auditor},
   year    = {2026},
-  url     = {https://github.com/contact993/pikaxps},
+  url     = {https://github.com/taeheekim2024-star/pikaxps},
   version = {0.1.4}
 }
 ```
 
-The repository also ships a [`CITATION.cff`](https://github.com/contact993/pikaxps/blob/main/CITATION.cff),
+The repository also ships a [`CITATION.cff`](https://github.com/taeheekim2024-star/pikaxps/blob/main/CITATION.cff),
 so GitHub's "Cite this repository" button always gives the current version.
 
 #### Reference-data sources

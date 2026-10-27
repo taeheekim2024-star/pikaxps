@@ -29,5 +29,5 @@ one — PikaXPS is the **free, Mac-friendly, validation-focused** option.
 
 :::note
 This page aims to be fair. Spotted something inaccurate about another tool?
-[Tell me](https://github.com/contact993/pikaxps/issues/new/choose) and I'll fix it.
+[Tell me](https://github.com/taeheekim2024-star/pikaxps/issues/new/choose) and I'll fix it.
 :::

@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 import sitemap from '@astrojs/sitemap';
 
 // When a custom domain is connected later, set SITE to it and BASE to '/'.
-const SITE = process.env.SITE_URL || 'https://contact993.github.io';
+const SITE = process.env.SITE_URL || 'https://taeheekim2024-star.github.io';
 const BASE = process.env.BASE_PATH || '/pikaxps';
 
 const softwareJsonLd = {
@@ -16,7 +16,7 @@ const softwareJsonLd = {
   description:
     'Free, cross-platform XPS (X-ray photoelectron spectroscopy) peak-fitting app with a built-in fit auditor and a citation-backed reference database. The modern replacement for XPSPEAK 4.1.',
   url: SITE + BASE + '/',
-  downloadUrl: 'https://github.com/contact993/pikaxps/releases',
+  downloadUrl: 'https://github.com/taeheekim2024-star/pikaxps/releases',
   softwareVersion: '0.1.0',
   license: 'https://www.gnu.org/licenses/gpl-3.0.html',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -33,7 +33,7 @@ export default defineConfig({
       tagline: 'Free XPS peak fitting for Mac & Windows — with a built-in fit auditor',
       description:
         'Free, cross-platform XPS peak-fitting software with a fit auditor and a citation-backed reference database. The modern XPSPEAK 4.1 replacement.',
-      social: { github: 'https://github.com/contact993/pikaxps' },
+      social: { github: 'https://github.com/taeheekim2024-star/pikaxps' },
       favicon: '/favicon.svg',
       customCss: ['./src/styles/custom.css'],
       defaultLocale: 'root',

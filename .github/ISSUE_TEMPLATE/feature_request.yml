@@ -5,7 +5,7 @@ labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
-      value: "For open-ended ideas or to vote on what's next, the [Discussions](https://github.com/contact993/xpsfit/discussions) board is often a better fit."
+      value: "For open-ended ideas or to vote on what's next, the [Discussions](https://github.com/taeheekim2024-star/xpsfit/discussions) board is often a better fit."
   - type: textarea
     id: problem
     attributes:

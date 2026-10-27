@@ -2,4 +2,4 @@
 
 __version__ = "0.1.4"
 APP_NAME = "PikaXPS"
-REPO_URL = "https://github.com/contact993/pikaxps"
+REPO_URL = "https://github.com/taeheekim2024-star/pikaxps"

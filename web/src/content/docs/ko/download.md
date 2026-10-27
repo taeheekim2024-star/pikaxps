@@ -7,11 +7,11 @@ PikaXPS는 무료 오픈소스(GPLv3)입니다. 계정도, 파이썬 설치도 �
 
 ## 다운로드 (최신 버전)
 
-- **⬇ macOS (Apple Silicon) — [PikaXPS-macOS.dmg](https://github.com/contact993/pikaxps/releases/latest/download/PikaXPS-macOS.dmg)**
-- **⬇ Windows 10 / 11 (x64) — [PikaXPS-Windows-x64.zip](https://github.com/contact993/pikaxps/releases/latest/download/PikaXPS-Windows-x64.zip)**
+- **⬇ macOS (Apple Silicon) — [PikaXPS-macOS.dmg](https://github.com/taeheekim2024-star/pikaxps/releases/latest/download/PikaXPS-macOS.dmg)**
+- **⬇ Windows 10 / 11 (x64) — [PikaXPS-Windows-x64.zip](https://github.com/taeheekim2024-star/pikaxps/releases/latest/download/PikaXPS-Windows-x64.zip)**
 
 위 링크는 파일을 바로 받습니다. (모든 버전을 보려면
-[릴리스 페이지](https://github.com/contact993/pikaxps/releases)에서 **Assets** 아래의 `.dmg` / `.zip`을
+[릴리스 페이지](https://github.com/taeheekim2024-star/pikaxps/releases)에서 **Assets** 아래의 `.dmg` / `.zip`을
 받으세요 — 자동 생성되는 "Source code"는 소스코드라 받지 마세요.)
 
 이 앱은 **무서명**(유료 Apple/Microsoft 인증서 없음)이라 첫 실행 시 OS가 경고를 띄웁니다. 정상이며,
@@ -27,7 +27,7 @@ PikaXPS는 무료 오픈소스(GPLv3)입니다. 계정도, 파이썬 설치도 �
 
 :::caution[Apple Silicon 전용]
 이 빌드는 **Apple Silicon(M1–M4)** 맥에서만 돌아갑니다. **Intel 맥에서는 실행되지 않습니다.**
-Intel/Linux 빌드가 필요하면 [이슈로 알려주세요](https://github.com/contact993/pikaxps/issues/new/choose).
+Intel/Linux 빌드가 필요하면 [이슈로 알려주세요](https://github.com/taeheekim2024-star/pikaxps/issues/new/choose).
 :::
 
 ### Windows (10 / 11, x64)에서 열기
@@ -39,7 +39,7 @@ Intel/Linux 빌드가 필요하면 [이슈로 알려주세요](https://github.co
 ## 소스에서 실행
 
 ```bash
-git clone https://github.com/contact993/pikaxps && cd pikaxps
+git clone https://github.com/taeheekim2024-star/pikaxps && cd pikaxps
 python -m venv .venv && . .venv/bin/activate
 pip install -e .
 python -m xpsfit.app
@@ -49,5 +49,5 @@ python -m xpsfit.app
 
 PikaXPS는 **광고 없는 100% 무료**입니다. 도움이 되셨다면 두 가지가 도구를 살립니다:
 
-- **[GitHub에서 Star →](https://github.com/contact993/pikaxps)** — 도구가 실제로 쓰인다는 가장 강한 신호입니다.
+- **[GitHub에서 Star →](https://github.com/taeheekim2024-star/pikaxps)** — 도구가 실제로 쓰인다는 가장 강한 신호입니다.
 - **[논문에 인용 →](/pikaxps/ko/cite/)** — 인용은 무료 학술 도구의 지속 개발을 정당화합니다.

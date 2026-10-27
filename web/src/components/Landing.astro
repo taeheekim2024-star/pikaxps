@@ -8,7 +8,7 @@ const { lang = 'en' } = Astro.props;
 const RAW_BASE = import.meta.env.BASE_URL;             // '/pikaxps' (no trailing slash here)
 const BASE = RAW_BASE.endsWith('/') ? RAW_BASE : `${RAW_BASE}/`;  // '/pikaxps/'
 const docBase = lang === 'ko' ? `${BASE}ko/` : BASE;
-const GH = 'https://github.com/contact993/pikaxps';
+const GH = 'https://github.com/taeheekim2024-star/pikaxps';
 const DL = `${docBase}download/`;
 const FEAT = `${docBase}features/`;
 const GUIDE = `${BASE}guides/fit-audit/`;              // guides are English-only

@@ -9,7 +9,7 @@ PikaXPS가 연구에 도움이 됐다면 언급해 주세요 — 무료 학술 �
 
 분석을 서술하는 곳에 이름만 넣으면 됩니다. 예를 들어:
 
-> *XPS 스펙트럼은 PikaXPS (https://github.com/contact993/pikaxps)으로 분석(피크 피팅)하였다.*
+> *XPS 스펙트럼은 PikaXPS (https://github.com/taeheekim2024-star/pikaxps)으로 분석(피크 피팅)하였다.*
 
 또는
 
@@ -19,7 +19,7 @@ PikaXPS가 연구에 도움이 됐다면 언급해 주세요 — 무료 학술 �
 인용입니다 — 그 이상은 필요 없습니다.
 
 :::tip[이 광고 없는 무료 도구를 지원하는 두 가지 방법]
-**⭐ [GitHub에서 PikaXPS Star](https://github.com/contact993/pikaxps)** 그리고 Methods에 한 줄 언급.
+**⭐ [GitHub에서 PikaXPS Star](https://github.com/taeheekim2024-star/pikaxps)** 그리고 Methods에 한 줄 언급.
 둘 다 무료이고 몇 초면 되며, 광고 없는 학술 도구가 유지되는 방법입니다.
 :::
 
@@ -33,12 +33,12 @@ PikaXPS가 연구에 도움이 됐다면 언급해 주세요 — 무료 학술 �
   author  = {Pika},
   title   = {PikaXPS: free cross-platform XPS peak fitting with a built-in fit auditor},
   year    = {2026},
-  url     = {https://github.com/contact993/pikaxps},
+  url     = {https://github.com/taeheekim2024-star/pikaxps},
   version = {0.1.4}
 }
 ```
 
-저장소에 [`CITATION.cff`](https://github.com/contact993/pikaxps/blob/main/CITATION.cff)가 있어서
+저장소에 [`CITATION.cff`](https://github.com/taeheekim2024-star/pikaxps/blob/main/CITATION.cff)가 있어서
 GitHub의 "Cite this repository" 버튼이 항상 현재 버전을 알려줍니다.
 
 #### 레퍼런스 데이터 출처

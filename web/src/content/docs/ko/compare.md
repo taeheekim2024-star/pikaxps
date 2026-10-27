@@ -28,5 +28,5 @@ XPS 피크 피팅에는 좋은 도구들이 있습니다. 올바른 선택을 �
 
 :::note
 공정하려고 노력한 페이지입니다. 다른 도구에 대한 부정확한 점이 있으면
-[알려주세요](https://github.com/contact993/pikaxps/issues/new/choose). 바로 고치겠습니다.
+[알려주세요](https://github.com/taeheekim2024-star/pikaxps/issues/new/choose). 바로 고치겠습니다.
 :::
